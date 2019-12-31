@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="./preset.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../editQuestion/editQuestion.css" />
+
+</head>
+
+<body>
+
+    <h2 class="success">Edit Course</h2>
+    <div class="alert-message">
+        <p>Add Question/Answer</p>
+        <div class="left" id="input">
+            <input type="hidden" class="input-edit" id="id-questions">
+            </br>
+            <div class="all">
+                <h1>Category </h1>
+                <input class="input-edit" id="category-questions" type="text">
+                <label id="category_error_msg"></label>
+            </div>
+            </br>
+            <div class="all">
+                <h1>Type question</h1>
+                <select id="type-questions">
+                    <option value="0">Single</option>
+                    <option value="1">Multiple</option>
+                </select>
+            </div>
+            </br>
+            <div class="all">
+                <h1>Content</h1>
+                <input class="input-edit input-content" id="content-questions" type="text">
+                <label id="content_error_msg"></label>
+            </div>
+
+            <div class="all">
+                <h1>Course ID</h1>
+                <input disabled class="input-edit" id="courseId-questions" type="text">
+            </div>
+            <div>
+                <input type="button" id="dialog-ok" value="OK">
+                <input type="button" id="dialog-cancle" onclick="dialog.exit('cancel')" value="Cancle">
+            </div>
+        </div>
+
+        <div id="right">
+            <h1>Answer</h1>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+
+
+    <script src="../admin/admin.js"></script>
+    <script src="../editQuestion/editQuestion.js"></script>
+
+</body>
+
+</html>

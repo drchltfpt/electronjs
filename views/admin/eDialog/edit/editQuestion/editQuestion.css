@@ -1,0 +1,188 @@
+body {
+    width: 500px;
+    margin-left: 120px;
+}
+
+input[type='text'] {
+    margin-top: -30px;
+    height: 25px;
+    border-radius: 3px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: lightslategrey;
+    /* float: right; */
+}
+
+input[type='text']:hover {
+    background-color: thistle;
+}
+
+#content-questions {}
+
+select {
+    border-radius: 5px;
+    width: 90px;
+    height: 20px;
+    background-color: indianred;
+}
+
+h1 {
+    margin-left: 5px;
+    color: orangered;
+    font-family: 'Droid serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 20px;
+}
+
+#dialog-ok {
+    width: 40px;
+    height: 25px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 21px;
+}
+
+#dialog-cancle {
+    width: 60px;
+    height: 25px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 21px;
+}
+
+.text-answer {
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+
+input[type='button']:hover {
+    background-color: palegreen;
+}
+
+#input {
+    margin-top: -20px;
+}
+
+.left {
+    float: left;
+    overflow: hidden;
+}
+
+#right {
+    width: 250px;
+    float: right;
+    overflow: hidden;
+}
+
+label {
+    margin-top: 4px;
+    margin-left: 5px;
+    color: red;
+}
+
+p {
+    color: tan;
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 50px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #082b34;
+}
+
+/* The container */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container {
+    color: hotpink;
+}
+
+.success {
+    margin-top: 100px;
+    z-index: 10;
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    line-height: 50px;
+    background-color:indianred;
+    margin-left: 45px;
+}
+

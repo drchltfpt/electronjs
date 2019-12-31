@@ -1,0 +1,97 @@
+body {
+    width: 450px;
+    margin-left: 130px;
+}
+
+.input {
+    margin-left: 50px;
+}
+
+input[type='text'] {
+    width: 250px;
+    margin-top: -50px;
+    height: 25px;
+    border-radius: 3px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: violet;
+}
+
+input[type='text']:hover {
+    background-color: orchid;
+}
+
+label {
+    margin-top: 4px;
+    margin-left: 5px;
+    color: red;
+}
+
+input[type='button']:hover {
+    background-color: mediumvioletred;
+}
+
+#dialog-ok, #dialog-cancle {
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+#dialog-cancle {
+    width: 60px;
+    height: 25px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+p {
+    color: #d54d7b;
+    font-family: "Great Vibes", cursive;
+    font-size: 50px;
+    line-height: 160px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: -40px;
+    text-shadow: 0 1px 1px #fff;
+    margin-left: 40px;
+}
+
+.not-first-h1, .first-h1{
+    margin-top: 50px;
+    margin-left: 5px;
+    color: #ff4411;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+}
+
+select {
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    background-color: coral;
+    margin-bottom: 10px;
+}
+
+select:hover {
+    background-color: orangered;
+}
+
+.first-h1 {
+    margin-top: -20px;
+}
+
+.success {
+    margin-top: 100px;
+    z-index: 10;
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    line-height: 50px;
+    background-color:chocolate;
+    margin-left: -10px;
+}

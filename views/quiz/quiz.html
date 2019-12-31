@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="../../common/css/reset.min.css">
+  <link rel='stylesheet' href='../../common/css/bulma.min.css'>
+  <link rel="stylesheet" href="./quiz.css">
+
+</head>
+
+<body>
+
+  <section class="hero is-primary is-fullheight">
+    <div class="count-down">Quiz closes in <span id="time"></span> minutes!</div>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-half">
+            <div class="has-text-centered">
+              <h1 id="title" class="title has-text-centered"></h1>
+              <h7 id="question-number" class="subtitle has-text-centered is-uppercase is-7 navigation"></h7>
+              <h5 id="question" class="subtitle has-text-centered is-5"></h5>
+              <div id="answers">
+
+              </div>
+              <div class="group-button">
+                <a id="previous-button" class="button is-primary is-inverted is-outlined is-rounded ">Previous</a>
+                <a id="next-button" class="button is-primary is-inverted is-outlined is-rounded ">Next</a>
+                <a id="submit-button" class="button is-primary is-inverted is-outlined is-rounded ">Submit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="../../common/jquery/preset.js"></script>
+  <script src="../../common/jquery/jquery.min.js"></script>
+  <script src="./quiz.js"></script>
+</body>
+
+</html>

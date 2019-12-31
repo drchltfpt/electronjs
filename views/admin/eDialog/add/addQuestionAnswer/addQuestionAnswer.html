@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Question/Answer</title>
+    <script type="text/javascript" src="./preset.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../addQuestionAnswer/addQuestionAnswer.css" />
+
+</head>
+
+<body>
+    <h2 class="success">Edit Course</h2>
+    <div class="alert-message">
+        <p>Add Question/Answer</p>
+        <div class="left" id="input">
+            <input type="hidden" class="input-edit" id="id-questions">
+            </br>
+            <div class="all">
+                <h1>Category </h1>
+                <input class="input-edit" id="category-questions" type="text">
+                <label id="category_error_msg"></label>
+            </div>
+            </br>
+            <div class="all">
+                <h1>Type question</h1>
+                <select id="type-questions">
+                    <option value="0">Single</option>
+                    <option value="1">Multiple</option>
+                </select>
+            </div>
+            </br>
+            <div class="all">
+                <h1>Content</h1>
+                <input class="input-edit input-content" id="content-questions" type="text">
+                <label id="content_error_msg"></label>
+            </div>
+            </br>
+            <div class="all">
+                <h1>Answer option</h1>
+                <select id="courseId-questions">
+
+                </select>
+            </div>
+            </br>
+        </div>
+        <div id="right">
+            <h1>Answer</h1>
+            <label class="container">
+                <input class="selected-answer" type="checkbox" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <input class="text-answer" id="answer-1" type="text">
+
+            <label class="container">
+                <input class="selected-answer" type="checkbox" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <input class="text-answer" id="answer-2" type="text">
+
+            <label class="container">
+                <input class="selected-answer" type="checkbox" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <input class="text-answer" id="answer-3" type="text">
+
+            <label class="container">
+                <input class="selected-answer" type="checkbox" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <input class="text-answer" id="answer-4" type="text">
+
+            <label class="container">
+                <input class="selected-answer" type="checkbox" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <input class="text-answer" id="answer-5" type="text">
+            </br>
+            <label id="corectId_error_msg"></label>
+
+            <div>
+                <input type="button" id="dialog-ok" value="OK">
+                <input type="button" id="dialog-cancle" onclick="dialog.exit('cancel')" value="Cancle">
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="../admin/admin.js"></script>
+    <script src="../addQuestionAnswer/addQuestionAnswer.js"></script>
+
+</body>
+
+</html>

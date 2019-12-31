@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="form">
+        <h1>Login</h1>
+        <div>
+            <input id="username" class="text" type="text" name="user" placeholder="Username" />
+        </div>
+        <div>
+            <input id="password" class="text" type="password" name="pass" placeholder="Password" />
+        </div>
+        <div>
+            <div id="notification" class='invalid-feedback has-error-min' style='display: none;'>
+                Username or Password was wrong!
+            </div>
+        </div>
+
+        <div class="group-button">
+            <input id="login-button" type="submit" name="submit" value="Login" class="submit-button" />
+            <input id="register-button" type="submit" name="submit" value="Register" class="submit-button" />
+        </div>
+    </div>
+    <script src="../../common/jquery/preset.js"></script>
+    <script src="../../common/jquery/jquery.min.js"></script>
+    <script>
+        require('./login.js');
+    </script>
+    <script src="../../common/js/bootstrap-validate.js"></script>
+    <script>
+        bootstrapValidate('#username', 'regex:^[a-z0-9_.-]{3,16}$:Enter a valid username');
+        bootstrapValidate('#password', 'regex:^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,50}$:Enter a valid password');
+    </script>
+</body>
+
+</html>

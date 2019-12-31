@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="./preset.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../editAnswer/editAnswer.css" />
+</head>
+
+<body>
+    <h2 class="success">Edit Answer</h2>
+    <div class="alert-message">
+        <p>Edit Answer</p>
+
+        <div class="input">
+            <input type="hidden" class="input-edit" id="id-answer">
+            <h1 class="not-first-h1">Question</h1>
+            <input disabled class="input-edit" id="questionId-answer" type="text">
+
+            <h1 class="not-first-h1">Content</h1>
+            <input class="input-edit" id="content-answer" type="text">
+            <label id="content_error_msg"></label>
+        </div>
+
+        <input type="button" id="dialog-ok" value="OK">
+        <input type="button" id="dialog-cancle" onclick="dialog.exit('cancel')" value="Cancle">
+    </div> 
+    <!-- SCRIPTS -->
+    <script src="../admin/admin.js"></script>
+    <script src="../editAnswer/editAnswer.js"></script>
+
+</body>
+
+</html>

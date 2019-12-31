@@ -1,0 +1,372 @@
+.glitch {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  left: 30px;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(51px, 9999px, 22px, 0);
+  }
+  5% {
+    clip: rect(4px, 9999px, 43px, 0);
+  }
+  10% {
+    clip: rect(82px, 9999px, 89px, 0);
+  }
+  15% {
+    clip: rect(75px, 9999px, 37px, 0);
+  }
+  20% {
+    clip: rect(8px, 9999px, 33px, 0);
+  }
+  25% {
+    clip: rect(66px, 9999px, 45px, 0);
+  }
+  30% {
+    clip: rect(71px, 9999px, 9px, 0);
+  }
+  35% {
+    clip: rect(3px, 9999px, 100px, 0);
+  }
+  40% {
+    clip: rect(1px, 9999px, 14px, 0);
+  }
+  45% {
+    clip: rect(32px, 9999px, 35px, 0);
+  }
+  50% {
+    clip: rect(68px, 9999px, 80px, 0);
+  }
+  55% {
+    clip: rect(48px, 9999px, 100px, 0);
+  }
+  60% {
+    clip: rect(76px, 9999px, 100px, 0);
+  }
+  65% {
+    clip: rect(7px, 9999px, 70px, 0);
+  }
+  70% {
+    clip: rect(9px, 9999px, 13px, 0);
+  }
+  75% {
+    clip: rect(72px, 9999px, 79px, 0);
+  }
+  80% {
+    clip: rect(82px, 9999px, 25px, 0);
+  }
+  85% {
+    clip: rect(75px, 9999px, 35px, 0);
+  }
+  90% {
+    clip: rect(31px, 9999px, 94px, 0);
+  }
+  95% {
+    clip: rect(73px, 9999px, 75px, 0);
+  }
+  100% {
+    clip: rect(53px, 9999px, 8px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(36px, 9999px, 87px, 0);
+  }
+  5% {
+    clip: rect(49px, 9999px, 92px, 0);
+  }
+  10% {
+    clip: rect(73px, 9999px, 87px, 0);
+  }
+  15% {
+    clip: rect(62px, 9999px, 78px, 0);
+  }
+  20% {
+    clip: rect(62px, 9999px, 30px, 0);
+  }
+  25% {
+    clip: rect(11px, 9999px, 92px, 0);
+  }
+  30% {
+    clip: rect(53px, 9999px, 7px, 0);
+  }
+  35% {
+    clip: rect(93px, 9999px, 15px, 0);
+  }
+  40% {
+    clip: rect(1px, 9999px, 15px, 0);
+  }
+  45% {
+    clip: rect(35px, 9999px, 58px, 0);
+  }
+  50% {
+    clip: rect(81px, 9999px, 25px, 0);
+  }
+  55% {
+    clip: rect(71px, 9999px, 77px, 0);
+  }
+  60% {
+    clip: rect(98px, 9999px, 19px, 0);
+  }
+  65% {
+    clip: rect(34px, 9999px, 67px, 0);
+  }
+  70% {
+    clip: rect(91px, 9999px, 74px, 0);
+  }
+  75% {
+    clip: rect(54px, 9999px, 98px, 0);
+  }
+  80% {
+    clip: rect(83px, 9999px, 24px, 0);
+  }
+  85% {
+    clip: rect(22px, 9999px, 49px, 0);
+  }
+  90% {
+    clip: rect(20px, 9999px, 65px, 0);
+  }
+  95% {
+    clip: rect(80px, 9999px, 8px, 0);
+  }
+  100% {
+    clip: rect(46px, 9999px, 80px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+body {
+  background: black;
+  background-image: url("https://players.planetside2.com/images/global/splashBg.jpg?v=205.11");
+  background-size: cover;
+  color: white;
+  font-family: Electrolize, sans-serif;
+}
+
+.box {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 150px;
+  margin: 50px auto;
+  padding: 20px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 34px;
+  text-shadow: 0px 0px 12px black;
+  z-index: 3;
+}
+
+.box:before {
+  z-index: 4;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 596px;
+  height: 146px;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  top: -349px;
+  left: 49px;
+  width: 502px;
+  height: 849px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+  z-index: -1;
+}
+
+.green {
+  box-shadow: -12px -12px 4px -10px rgba(0, 128, 128, 0.2), 12px 12px 4px -10px rgba(0, 128, 128, 0.2);
+}
+.green:before {
+  box-shadow: -20px -20px 0 2px teal, 20px 20px 0 2px teal;
+}
+.green:after {
+  background-image: linear-gradient(225deg, rgba(0, 128, 128, 0.6) 30%, rgba(0, 23, 23, 0.6) 50%);
+  border-left: 2px solid teal;
+  border-right: 2px solid teal;
+  box-shadow: 0px 0px 4px 4px rgba(0, 128, 128, 0.2), inset 0px 0px 50px 4px rgba(0, 128, 128, 0.5);
+}
+.green:hover {
+  text-shadow: 0px 0px 8px teal;
+  box-shadow: -12px -12px 25px -10px rgba(0, 128, 128, 0.6), 12px 12px 25px -10px rgba(0, 128, 128, 0.6);
+}
+.green:hover:after {
+  background-image: linear-gradient(225deg, rgba(0, 128, 128, 0.8) 40%, rgba(0, 23, 23, 0.8) 50%);
+}
+
+/* <---------------------------- BUTTON ----------------------------------->*/
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v8/4UaHrEJCrhhnVA3DgluA96Tp56N1.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v8/4UaHrEJCrhhnVA3DgluA96rp5w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@supports (display: grid) {
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+    float: right;
+  }
+}
+#result h2{
+  font-family: 'Bree Serif', serif;
+  color: white;
+}

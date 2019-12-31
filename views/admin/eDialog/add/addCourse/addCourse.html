@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Course</title>
+    <script type="text/javascript" src="./preset.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../addCourse/addCourse.css" />
+</head>
+
+<body>
+    <h2 class="success">Edit Course</h2>
+    <div class="alert-message">
+        <p>Add Course</p>
+        <div class="input">
+            <h1 class="first-h1">Name</h1>
+            <input class="input-edit" id="name-course" type="text">
+            <label id="name_error_msg"></label>
+
+            <h1 class="not-first-h1">Descript</h1>
+            <input class="input-edit" id="descript-course" type="text">
+            <label id="descript_error_msg"></label>
+
+            <h1 class="not-first-h1">Valid</h1>
+            <select id="valid-course">
+                <option value="0">Unavailable</option>
+                <option value="1">Available</option>
+            </select>
+
+            <h1 class="not-first-h1">Total Time</h1>
+            <input class="input-edit" id="total-course" type="text">
+            <label id="total_time_error_msg"></label>
+        </div>
+
+        <div>
+            <input type="button" id="dialog-ok" value="OK">
+            <input type="button" id="dialog-cancle" onclick="dialog.exit('cancel')" value="Cancle">
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="../admin/admin.js"></script>
+    <script src="../addCourse/addCourse.js"></script>
+</body>
+
+</html>

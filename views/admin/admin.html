@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🙂 Course Train Admin 🙂</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../admin/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../admin/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../admin/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="../admin/css/admin.css" />
+    <link rel="stylesheet" type="text/css" href="../admin/css/common.css" />
+
+    <script src="../admin/modernizr.custom.js"></script>
+</head>
+
+<body>
+
+    <div id="alert" class="alert">
+        <span class="closebtn"></span>
+        <strong class="strong"></strong>
+    </div>
+
+    <div class="container">
+
+        <ul id="gn-menu" class="gn-menu-main">
+            <li class="gn-trigger">
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                <nav class="gn-menu-wrapper">
+                    <div class="gn-scroller">
+                        <ul class="gn-menu">
+                            <li><a class="gn-icon a-course gn-icon-article">🙂 Course</a></li>
+                            <li><a class="gn-icon a-question gn-icon-help">😊 Question</a></li>
+                            <li><a class="gn-icon a-answer gn-icon-cog">🤕 Answer</a></li>
+                            <li><a class="gn-icon a-report gn-icon-archive">☹️ Report</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-illustrator">😃 Pass </a></li>
+                                    <li><a class="gn-icon gn-icon-photoshop">😢 Fail </a></li>
+                                    <li><a class="gn-icon gn-icon-photoshop">📊 Chart</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /gn-scroller -->
+                </nav>
+            </li>
+            <li><a class="codrops-icon logout codrops-icon-drop">
+                    <span>😶Logout</span></a></li>
+        </ul>
+        <header>
+            <div class="right">
+                <div class="right-top">
+                    <input id="input-search" type="text">
+                    <button disabled id="btn-add" class="button add">👿Add</button>
+                    <button disabled id="btn-email" class="button email">🙃ntienmanh94@gmail.com</button>
+                </div>
+                <div class="right-bot">
+                    <div id="div-course">
+
+                    </div>
+                    <div id="div-question">
+
+                    </div>
+                    <div id="div-answer">
+
+                    </div>
+                    <div id="div-report">
+
+                    </div>
+                    <div id="div-email">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+    <script src="../admin/classie.js"></script>
+    <script src="../admin/gnmenu.js"></script>
+    <script src="../admin/admin.js"></script>
+
+    <script>
+        new gnMenu(document.getElementById('gn-menu'));
+    </script>
+
+</body>
+
+</html>

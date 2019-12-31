@@ -1,0 +1,82 @@
+body {
+    width: 450px;
+    margin-left: 130px;
+}
+
+.input {
+    margin-left: 50px;
+}
+
+input[type='text'] {
+    width: 250px;
+    margin-top: -50px;
+    height: 25px;
+    border-radius: 3px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: goldenrod;
+    /* float: right; */
+}
+
+input[type='text']:hover {
+    background-color: khaki;
+}
+
+label {
+    margin-top: 4px;
+    margin-left: 5px;
+    color: red;
+}
+
+input[type='button']:hover {
+    background-color: lawngreen;
+}
+
+#dialog-ok, #dialog-cancle {
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+#dialog-cancle {
+    width: 60px;
+    height: 25px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+p {
+    color: mediumorchid;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-left: -95px;
+}
+
+.not-first-h1, .first-h1 {
+    font-style: italic;
+    font-family: 'Inder', sans-serif;
+    line-height: 28px;
+    color: #666;
+    margin-top: 50px;
+}
+
+.success {
+    margin-top: 100px;
+    z-index: 10;
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    line-height: 50px;
+    background-color:darkgoldenrod;
+    margin-left: -5px;
+}
